@@ -1,40 +1,78 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img width="150"src="https://laravel.com/laravel.png"></a></p>
+# Larahell
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
-
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+```
+                                         m$$@$@@$@@$@@@,                                           
+                                      n@@@%@#jC](x @@@@#@?                                         
+                                   x@@%@$@x          ;@@@@@                                        
+                                 $@#@@@_ .             @@@@@@.                                     
+                         -Q@$@@@$$@                      @@@$@@                                    
+                      ($@@@%$@@$@@?.                     -@#@@@                                    
+                     @@@#@@#@@@W1$@                       x@@@@+                                   
+                    >@@@@@@&$&@$ @@|                       @@#@n                                   
+                    $@@@@@@@@@@z !@@i                      <@@$]                                   
+                    @@@@@@@$@@@  ,$@f         x@@$@Y}       !@%r                                   
+                    @@@@@@@$@    n#@]#@<    v@@@@@@@@@$?    ]@@c                                   
+                    @@@@@@@B?i-_v#@@@#@    $@@@@#@@$$i@@#   1@@[                                   
+                    {@@@&@@@@$%@#@@f      v@@@@@@@$@@  @@@U j@$x                                   
+                    @@@     J@@@@  Jc    j@@@@@@@$@#@  t$#@.C@$1                                   
+                   @$@L    x@%@@   ]@p   #@#$@@@@@@##  !@@@ #@@+                                   
+                   @@8     _@@$@@@@@$@<  #@@@@@$@@@B.   $@iY$@@                                    
+                 @@@@@@@@*(l     .       ~@@@@mI       %@  @$#@                                    
+                !@@@$@@@@@@@@@@@}l         @@@@@@@@@@@#h   @@@#                                    
+               _@@@( .I!p$@@@@@@@@@$@kJ       1&@$#@@@x   )@@@8                                    
+               ##@$          (tB@@$@@##@#$@ti             B#@#J                                    
+              z@#@_                    ;!;t###@@@U1      }@@@#                                     
+             r@#@?                                       #@$@n                                     
+             @@@@                                        @$@@                                      
+            >@@@L.                                      z@@@@                                      
+           ~$@@!                                       ]@@#@n                                      
+           @$@#                                        ##@&Q                                       
+          x@@@u                                        $@$@                                        
+         I@@#U                                        |@@@$                                        
+         (@@@.                          |@#          |@@$;                                         
+         [@@@                           @@@   @@<    @@@@                                          
+         n@@@                          U@@]  @@@J    @&@x                               1aqU>      
+         j@@@                          @@$>  @@@|   (@@@                              J@$W#@@@t    
+         J@@m                          @@}  z@@1   1@@@                             q@@$     @@M   
+         J@@x                          @$. {@@@.   @@@@                            $@@@      @@@.  
+         J@#Z                         v@$  @#@Z    @#@,                          Z@@$%       @@C   
+         J@@Y                         k$Z  @##    {@&@,                         }@@@@        @%    
+         J@@C                        f@]  >@@    i@@#n                         @@#@        i#@J    
+         J@@U                        @@  X@@@    t##@                        o@@@x         @@i     
+         J@@Y                        @@  @@@     z@@@  -*@#@@@@@@@@@J       Z$@@n        ~@@@      
+         z@@{                        @0 {@#~     f#@@@@@$@$@@@$@@@@@$@@    @@@@ .        @@C       
+         )#@$                       ;8 c@@&      j$$@l    ~jI      1w@@$@M#$@          @@@C        
+         !@@#                      +@! @@@       1%@#      @@@-       >%@@@          Z@#@>         
+          @@#                      ##  @$)         ,;      @#@/        @@]          !#@@*          
+          W@@                      @$  @&                  uUW8@@BQx>m$@z          #@$@L           
+          [@@)                   @@;    X@h            @@@@@@@%@#@@##$@@I        @@@@@j            
+           @@b                 #Z        U@]            !1/_,;_(rx##@@#@#@u     i###@U_            
+           ###]               @      [@t  .@v.                      .|%@#@@x       #@@@@L          
+           a@@@               #@@@@  @@@$ .@?                          {@@@@@         _i@$@        
+           <@@@!                 @@Lj@@.;@@                  @@          ##@$@           @$f       
+            >@@@~                 o@@@I                     Y@@           t#@@@   nY(  _x@#        
+             @@%@                  1[ .                      cY            @@@$   .(@@@$h          
+             W@@@z                                                         @@@@      @@I           
+               @@@@                                    /@@r                ?@@@       _@@          
+               .@@@@o                                  @@@c                X#$@        @@          
+                 d#@@@)                                $@                  }$#@        $@          
+                   @$@@@I                                                  @@#@@@f{l|[#@#.         
+                   @@@@#@@#I                           >@@@               p@@+Ijm@@@@@}            
+      @@@)        C@#[ ;U$@@%01                         . .             ]@@@>. .                   
+     /@ }@#      @@@m    @@@@@@@@C<                                    @@@#                        
+     /@( i@#m   n@#I   x@@} }@@@@@@@#@t|,                 ~@d        @@@$~                         
+      0@   r@@[@@Z   }@@&     .  Xq@@@@@@@@@@n             YB     |&$$@                            
+      (@U    #@@@   ?@@              iz#@@@$@@|  @@@@@&&nr?    )@@@@$ .                            
+       $@     J;   @@@+                  C@$@;   $@@@@@@@@@@$@@#@@@                                
+       @#        {$@@            ?t%dzi  @@#u   Y@@   -X0@@@$@@Y                                   
+        o@-    Y@@@ .            @$#$@@@@@$    ;$@?                                                
+         @@  +#@@[               @@@v##@@@Z    @@r                                                 
+         i@@@@@@[                #@$#  n}      $@                                                  
+           @@#@                  z@#@         @@x                                                  
+                                  }@@@       @@]                                                   
+                                   @@#B     >@@                                                    
+                                   +@@@    }@@z                                                    
+                                     @$@-  @@(                                                     
+                                      L@$@@%;                                                      
+                                      .U@@@.
+```
